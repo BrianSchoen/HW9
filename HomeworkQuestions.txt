@@ -1,0 +1,9 @@
+- My total training time was approximately 27 hours
+- I suspect that my model is fully trained on the basis that my graphs for both loss on the training set and eval set have been relatively flat for a considerable number of consecutive steps.
+- I do not believe that I am overfitting.  If I am overfitting, I would likely see increased performance on the training set corresponding to decreased performance on the eval set.  This doesn't appear to be happening.
+- The learning rate is representative of the size of the change made with each step.  This value maintains momentum, but appears to be bound by the epsilon parameter in the config file.
+- My training set was 607mb
+- There are 9 files that characterize a tf checkpoint, the current best model, a list of events, a graph file, and 6 checkpoint data files.
+- My total model size is approximately 813mb, the sum total of all files saved in the best_models folder is 9.9gb.
+- Each step took approximately 2 seconds
+
